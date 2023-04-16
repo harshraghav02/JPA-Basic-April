@@ -1,2 +1,9 @@
-package com.example.jpabasicsapril;public class CardRepository {
+package com.example.jpabasicsapril;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CardRepository extends JpaRepository<Card,Integer> {
+
 }
